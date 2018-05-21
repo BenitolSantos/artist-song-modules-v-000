@@ -3,7 +3,7 @@ require 'pry'
 class Artist
   extend Memorable::ClassMethods
   extend Findable::ClassMethods
-  include Paramable::InstanceMethods 
+  include Paramable::InstanceMethods
   #extend is for class methods
   #include is for instance
   attr_accessor :name
@@ -15,8 +15,7 @@ class Artist
     @@artists.detect{|a| a.name == name}
   end
 
-  def initialize(name)
-    @name = name
+  def initialize
     @@artists << self
     @songs = []
   end
