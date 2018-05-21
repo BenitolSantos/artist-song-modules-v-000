@@ -1,4 +1,4 @@
-require 'artist-song-modules/lib/concerns/memorable.rb'
+require 'artist-song-modules-v-000/lib/concerns/memorable.rb'
 require 'pry'
 
 class Song
