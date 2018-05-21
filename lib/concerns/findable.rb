@@ -1,4 +1,7 @@
 module Findable
-  def self.find_by_name
+  module InstanceMethods
+  def self.find_by_name(name)
+    self.find {}
   end
+end
 end
