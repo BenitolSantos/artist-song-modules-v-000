@@ -1,4 +1,4 @@
-require 'artist-song-modules-v-000/lib/concerns/memorable.rb'
+
 require 'pry'
 
 class Artist
@@ -20,7 +20,7 @@ class Artist
     @@artists
   end
 
-  extend Memorable
+  extend Memorable::ClassMethods 
 =begin
   def self.reset_all
     self.all.clear
