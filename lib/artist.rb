@@ -1,4 +1,3 @@
-
 require 'pry'
 
 class Artist
@@ -20,7 +19,7 @@ class Artist
     @@artists
   end
 
-  extend Memorable::ClassMethods 
+  extend Memorable::ClassMethods
 =begin
   def self.reset_all
     self.all.clear
