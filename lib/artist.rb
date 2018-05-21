@@ -14,6 +14,7 @@ class Artist
   end
 
   def initialize (name)
+    @name = name
     @@artists << self
     @songs = []
   end
