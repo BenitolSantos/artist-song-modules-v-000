@@ -13,7 +13,7 @@ class Artist
     @@artists.detect{|a| a.name == name}
   end
 
-  def initialize
+  def initialize (name)
     @@artists << self
     @songs = []
   end
