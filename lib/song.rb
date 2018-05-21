@@ -1,9 +1,9 @@
 require 'pry'
 
 class Song
-  extend Memorable::ClassMethods #classmethods need to be defined first
-  extend Findable::ClassMethods #
-  include Paramable::InstanceMethods
+  extend Memorable::ClassMethods #class methods need to be defined first
+  extend Findable::ClassMethods #instance methods are include
+  include Paramable::InstanceMethods #<- this is how to call nested modules
   attr_accessor :name
   attr_reader :artist
 
